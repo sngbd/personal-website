@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts.js"></script>
+  <title>Gilberdi Sinaga</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="name_container">
+        <a href="/" class="name">Gilberdi Sinaga</a>
+      </div>
+      <div class="hamburger" onclick="toggleLinks()">☰</div>
+      <ul class="links">
+        <li>
+          <a href="/biography.html" class="link">Biography</a>
+        </li>
+        <li>
+          <a href="/resume.html" class="link">Resume</a>
+        </li>
+        <li>
+          <a href="/time-table.html" class="link">Time Table</a>
+        </li>
+        <li>
+          <a href="/galleries.html" class="link">Galleries</a>
+        </li>
+        <li>
+          <a href="/download.html" class="link">Download</a>
+        </li>
+        <li>
+          <a href="/links.html" class="link">Links</a>
+        </li>
+        <li>
+          <a href="/login.html" class="link">Login</a>
+        </li>
+        <li>
+          <a href="/" onclick="logout()" class="link">Logout</a>
+        </li>
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/gilberdi">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@gilberdi">
+              <i class="fa fa-youtube-play" width="15"></i>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="intro">
+          <img class="me" src="me.jpeg" alt="me">
+          <div class="name_header">Gilberdi Sinaga</div>
+          <div class="email">
+            <a href="mailto:gilberdising012@gmail.com" class="email_link">
+              gilberdising012@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="blurb">
+          <div class="subtitle">About</div>
+          <p>
+            Hi, I'm Gilberdi. I'm a computer science student in Universitas Sumatera Utara. 
+            I'm interested in backend engineering and competitive programming.
+          </p>
+        </div>
+        <a class="button" href="/resume.html">Learn More</a>
+      </div>
+      <div class="main_container">
+        <div class="main">
+          <div class="main_title">
+            <div class="title">Sign Up</div>
+          </div>
+          <div class="main_content">
+            <!-- Trigger a function when submitted -->
+            <form action="" method="POST" onsubmit="submitSignUp()">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><label for="formName">First Name:</label></td>
+                    <td><input type="text" name="formName" id="formName" placeholder="First Name"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formName">Last Name:</label></td>
+                    <td><input type="text" name="formName" id="formName" placeholder="Last Name"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formGender">Gender:</label></td>
+                    <td>
+                      <label for="male">Male:</label><input type="radio" id="male" name="formGender" value="Male">
+                      <label for="female">Female:</label><input type="radio" id="female" name="formGender" value="female">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="formAddress">Address 1:</label></td>
+                    <td><input type="text" name="formAddress" id="formAddress" placeholder="Address 1"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formAddress">Address 2:</label></td>
+                    <td><input type="text" name="formAddress" id="formAddress" placeholder="Address 2"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formCity">City</label></td>
+                    <td><input type="text" name="formCity" id="formCity" placeholder="City"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formState">State:</label></td>
+                    <td>
+                      <select name="formState" id="state">
+                        <option selected="" disabled="">Select state</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Penang">Penang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Malacca">Malacca</option>
+                        <option value="Johore">Johore</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Pahang">Pahang</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="formPhoneNumber">Phone Number:</label></td>
+                    <td><input type="tel" name="formPhoneNumber" id="formPhoneNumber"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formEmail">Email Address:</label></td>
+                    <!-- Error sound when the form is invalid -->
+                    <td><input type="email" name="formEmail" id="formEmail" placeholder="Email Address" oninvalid="soundError()"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formEducation">Educational Background:</label></td>
+                    <td>
+                      <select name="formEducation" id="education" multiple>
+                        <option selected="" disabled="">Select educational background</option>
+                        <option value="SPM">SPM</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Degree">Degree</option>
+                        <option value="Master">Master</option>
+                        <option value="PhD">PhD</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="formUsername">Username:</label></td>
+                    <td><input type="text" name="formUsername" id="formUsername"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formPassword">Password:</label></td>
+                    <td><input id="password" type="password" name="formPassword" id="formPassword"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="formRePassword">Re-enter Password:</label></td>
+                    <td><input id="confirmPassword" type="password" name="formRePassword" id="formRePassword"></td>
+                  </tr>
+                </tbody>
+              </table>         
+              <div class="buttons">
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset" name="clear" id="clear" value="Clear">
+                <input type="button" name="cancel" id="cancel" value="Cancel" onclick="history.back()">
+              </div>
+            </form>
+            <p>
+              Already have an account? <a href="login.html" class="download">Log In</a> <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <a href="#">Copyright</a>&copy; 2023 Gilberdi Axel Nathaniel Sinaga &nbsp;| &nbsp; <a href="#">Disclaimer</a>
+  </footer>
+</body>
+<audio id="notification" src="audio/notification.mp3" preload="auto"></audio>
+<audio id="error" src="audio/error.mp3" preload="auto"></audio>
+</html>

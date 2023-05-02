@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts.js"></script>
+  <title>Gilberdi Sinaga</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="name_container">
+        <a href="/" class="name">Gilberdi Sinaga</a>
+      </div>
+      <div class="hamburger" onclick="toggleLinks()">☰</div>
+      <ul class="links">
+        <li>
+          <a href="/biography.html" class="link">Biography</a>
+        </li>
+        <li>
+          <a href="/resume.html" class="link">Resume</a>
+        </li>
+        <li>
+          <a href="/time-table.html" class="link">Time Table</a>
+        </li>
+        <li>
+          <a href="/galleries.html" class="link">Galleries</a>
+        </li>
+        <li>
+          <a href="/download.html" class="link">Download</a>
+        </li>
+        <li>
+          <a href="/links.html" class="link">Links</a>
+        </li>
+        <li>
+          <a href="/login.html" class="link">Login</a>
+        </li>
+        <li>
+          <a href="/" onclick="logout()" class="link">Logout</a>
+        </li>
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/gilberdi">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@gilberdi">
+              <i class="fa fa-youtube-play" width="15"></i>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="intro">
+          <img class="me" src="me.jpeg" alt="me">
+          <div class="name_header">Gilberdi Sinaga</div>
+          <div class="email">
+            <a href="mailto:gilberdising012@gmail.com" class="email_link">
+              gilberdising012@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="blurb">
+          <div class="subtitle">About</div>
+          <p>
+            Hi, I'm Gilberdi. I'm a computer science student in Universitas Sumatera Utara. 
+            I'm interested in backend engineering and competitive programming.
+          </p>
+        </div>
+        <a class="button" href="/resume.html">Learn More</a>
+      </div>
+      <div class="main_container">
+        <div class="main">
+          <div class="main_title">
+            <div class="title">Galleries</div>
+            <p>Collection of pictures, videos, and audios</p>
+          </div>
+          <div class="main_content">
+            <!-- My pictures -->
+            <div class="main_section">
+              <h3>Picture</h3>
+              <ul class="gallery">
+                <img src="pictures/1.JPG" width="420" height="315" alt="">
+                <img src="pictures/2.jpeg" width="420" height="315" alt="">
+                <img src="pictures/3.jpeg" width="420" height="315" alt="">
+              </ul>
+            </div>
+            <!-- My videos on youtube -->
+            <div class="main_section">
+              <h3>Video</h3>
+              <ul class="gallery">
+                <li>
+                  <iframe
+                    src="https://www.youtube.com/embed/6JZAl_oKKj0">
+                  </iframe>
+                </li>
+                <li>
+                  <iframe
+                    src="https://www.youtube.com/embed/tZrRNu5OK_k">
+                  </iframe>
+                </li>
+                <li>
+                  <iframe
+                    src="https://www.youtube.com/embed/CknL_AOBYek">
+                  </iframe>
+                </li>
+                <li>
+                  <iframe
+                    src="https://www.youtube.com/embed/-HgUzin6e0U">
+                  </iframe>
+                </li>
+                <li>
+                  <iframe
+                    src="https://www.youtube.com/embed/dZe1vHECvSQ">
+                  </iframe>
+                </li>
+              </ul>
+            </div>
+            <!-- My favorite music -->
+            <div class="main_section">
+              <h3>Audio</h3>
+              <ul class="gallery">
+                <li class="audio">
+                  <span>Pascal Rogé - Gymnopédie No.1</span>
+                  <audio controls>
+                    <source src="audio/Gymnopédie No.1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </li>
+                <li class="audio">
+                  <span>My Bloody Valentine - Soon</span>
+                  <audio controls>
+                    <source src="audio/Soon.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </li>
+                <li class="audio">
+                  <span>NewJeans - Cookie</span>
+                  <audio controls>
+                    <source src="audio/Cookie.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <a href="#">Copyright</a>&copy; 2023 Gilberdi Axel Nathaniel Sinaga &nbsp;| &nbsp; <a href="#">Disclaimer</a>
+  </footer>
+</body>
+<audio id="error" src="audio/error.mp3" preload="auto"></audio>
+</html>

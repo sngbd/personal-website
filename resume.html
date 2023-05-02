@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts.js"></script>
+  <title>Gilberdi Sinaga</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="name_container">
+        <a href="/" class="name">Gilberdi Sinaga</a>
+      </div>
+      <div class="hamburger" onclick="toggleLinks()">☰</div>
+      <ul class="links">
+        <li>
+          <a href="/biography.html" class="link">Biography</a>
+        </li>
+        <li>
+          <a href="/resume.html" class="link">Resume</a>
+        </li>
+        <li>
+          <a href="/time-table.html" class="link">Time Table</a>
+        </li>
+        <li>
+          <a href="/galleries.html" class="link">Galleries</a>
+        </li>
+        <li>
+          <a href="/download.html" class="link">Download</a>
+        </li>
+        <li>
+          <a href="/links.html" class="link">Links</a>
+        </li>
+        <li>
+          <a href="/login.html" class="link">Login</a>
+        </li>
+        <li>
+          <a href="/" onclick="logout()" class="link">Logout</a>
+        </li>
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/sngbd">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/gilberdi">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="15">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@gilberdi">
+              <i class="fa fa-youtube-play" width="15"></i>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="intro">
+          <img class="me" src="me.jpeg" alt="me">
+          <div class="name_header">Gilberdi Sinaga</div>
+          <div class="email">
+            <a href="mailto:gilberdising012@gmail.com" class="email_link">
+              gilberdising012@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="blurb">
+          <div class="subtitle">About</div>
+          <p>
+            Hi, I'm Gilberdi. I'm a computer science student in Universitas Sumatera Utara. 
+            I'm interested in backend engineering and competitive programming.
+          </p>
+        </div>
+        <a class="button" href="/">Learn More</a>
+      </div>
+      <div class="main_container">
+        <div class="main">
+          <div class="main_title">
+            <div class="title">Resume</div>
+            <p>Overview of my professional qualifications</p>
+          </div>
+          <div class="main_content">
+            <div class="main_section">
+              <h3>Education</h3>
+              <table>
+                <tr>
+                  <th>Degree</th>
+                  <td>Bachelor's Degree in Computer Science</td>
+                </tr>
+                <tr>
+                  <th>School</th>
+                  <td><a href="https://www.uitm.edu.my/">Universiti Teknologi MARA</a></td>
+                </tr>
+                <tr>
+                  <th>Duration</th>
+                  <td>Mar 2023 - Aug 2023</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>Degree</th>
+                  <td>Bachelor's Degree in Computer Science</td>
+                </tr>
+                <tr>
+                  <th>School</th>
+                  <td><a href="https://www.usu.ac.id/">Universitas Sumatera Utara</a></td>
+                </tr>
+                <tr>
+                  <th>Duration</th>
+                  <td>Jul 2021 - Sep 2025</td>
+                </tr>
+              </table>
+            </div>
+            <div class="main_section">
+              <h3>Experience</h3>
+              <div>
+                <h4>
+                  <a href="https://azuralabs.id/">Azura Labs</a> - Young Potential Participant (Backend)
+                </h4>
+                <p class="desc">Aug 2022 - Dec 2022</p>
+                <ul class="points">
+                  <li>Built a backend system in collaboration with frontend team for a training project</li>
+                  <li>Technologies used: Node.js, Express.js, PostgreSQL, Railway</li>
+                </ul>
+              </div>
+            </div>
+            <div class="main_section">
+              <h3>Honors & Awards</h3>
+              <div>
+                <h4>2nd Winner on Mini-Tech Competition 2022: Challenge Your Skill (Competitive Programming)</h4>
+                <p class="desc">Issued by PEMA Fasilkom-TI Universitas Sumatera Utara · Jun 2022</p>
+              </div>
+            </div>
+            <div class="main_section">
+              <h3>Projects</h3>
+              <!-- List of my projects -->
+              <article class="mini_post">
+                <header>
+                  <h3 class="project_title">
+                    <a href="https://github.com/sngbd/tokosale">TokoSale</a>
+                  </h3>
+                  <time class="published">February 12, 2023</time>
+                </header>
+                <a href="https://github.com/sngbd/tokosale" class="image">
+                  <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="tokosale" width="700">
+                </a>
+                <div class="description">
+                  <p>Web application to collate flash sales from various Indonesian online marketplaces. Built for a hackathon submission.</p>
+                </div>
+              </article>
+              <article class="mini_post">
+                <header>
+                  <h3 class="project_title">
+                    <a href="https://github.com/sngbd/last-boxd-server">Last Boxd</a>
+                  </h3>
+                  <time class="published">January 7, 2023</time>
+                </header>
+                <a href="https://github.com/sngbd/last-boxd-server" class="image">
+                  <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="last-boxd" width="700">
+                </a>
+                <div class="description">
+                  <p>Generate a collage based on Letterboxd user's latest diary.</p>
+                </div>
+              </article>
+              <article class="mini_post">
+                <header>
+                  <h3 class="project_title">
+                    <a href="https://github.com/sngbd/woishop-api">WoiShop API</a>
+                  </h3>
+                  <time class="published">August 16, 2022</time>
+                </header>
+                <a href="https://github.com/sngbd/woishop-api" class="image">
+                  <img src="https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="woishop-api" width="700">
+                </a>
+                <div class="description">
+                  <p>REST API for a mock-up e-commerce site named ”WoiShop”.</p>
+                </div>
+              </article>
+            </div>
+            <div class="main_section">
+              <h3>Skills</h3>
+              <!-- List of my skills -->
+              <ul class="skills">
+                <li class="skill-category">
+                  <h4>Frameworks</h4>
+                  <ul>
+                    <li>
+                      <img alt="express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+                    </li>
+                    <li>
+                      <img alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="django" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="skill-category">
+                  <h4>Programming Languages</h4>
+                  <ul>
+                    <li>
+                      <img alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="php" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="skill-category">
+                  <h4>Databases</h4>
+                  <ul>
+                    <li>
+                      <img alt="postgresql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="mysql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                    </li>
+                    <li>
+                      <img alt="sqlite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="skill-category">
+                  <h4>Tools</h4>
+                  <ul>
+                    <li>
+                      <img alt="nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="vscode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                    </li>
+                    <li>
+                      <img alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <a href="#">Copyright</a>&copy; 2023 Gilberdi Axel Nathaniel Sinaga &nbsp;| &nbsp; <a href="#">Disclaimer</a>
+  </footer>
+</body>
+<audio id="error" src="audio/error.mp3" preload="auto"></audio>
+</html>
